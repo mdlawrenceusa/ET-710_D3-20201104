@@ -10,10 +10,10 @@ import { CartService } from '../cart.service';
 })
 export class GraphicDesignComponent implements OnInit {
 
-  portfolioItems ;
+portfolioItems;
 
   constructor(
-    private cartService: CartService,
+    private cartService: CartService
   ) { }
 
   ngOnInit() {

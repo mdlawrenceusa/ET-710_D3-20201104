@@ -1,6 +1,9 @@
 <h3>Graphic Design Portfolio</h3>
 
-<div  *ngFor="let portfolioItem of portfolioItems ">
-  <span>{{ portfolioItem.name }}</span>
-  <span>{{ portfolioItem.cover }}</span>
+<div *ngFor="let item of portfolioItems | async">
+  <h1>{{ it.name }}</h1>
+
+  <img src="{{ item.artwork }}" 
+  alt="{{ item.name }}" height="357">
+
 </div>

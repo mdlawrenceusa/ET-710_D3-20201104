@@ -13,6 +13,7 @@ import { CartService } from './cart.service';
 import { CartComponent } from './cart/cart.component';
 import { ShippingComponent } from './shipping/shipping.component';
 import { GraphicDesignComponent } from './graphic-design/graphic-design.component';
+import { IllustrationComponent } from './illustration/illustration.component';
 
 @NgModule({
   imports: [
@@ -25,6 +26,8 @@ import { GraphicDesignComponent } from './graphic-design/graphic-design.componen
       { path: 'cart', component: CartComponent },
       { path: 'shipping', component: ShippingComponent },
       { path: 'graphic', component: GraphicDesignComponent },
+      { path: 'illustration', component: IllustrationComponent },
+
     ])
   ],
   declarations: [
@@ -35,7 +38,8 @@ import { GraphicDesignComponent } from './graphic-design/graphic-design.componen
     ProductDetailsComponent,
     CartComponent,
     ShippingComponent,
-    GraphicDesignComponent
+    GraphicDesignComponent,
+    IllustrationComponent
   ],
   bootstrap: [ AppComponent ],
   providers: [CartService]
